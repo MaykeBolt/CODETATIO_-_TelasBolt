@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Dimensions, SafeAreaView, StyleSheet, Text } from "react-native";
+import Feed from "./src/Presentation/View/screens/Feed";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import HeaderBar from "./src/Service/components/HeaderBar";
+import FooterBar from "./src/Service/components/FooterBar";
+
+const {height, width} = Dimensions.get('window');
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={style.root}>
+      <Feed />   
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const style = StyleSheet.create ({
+  root: {
+    //flex: 1,
+    //backgroundColor: "#ffd4ad",
+    //backgroundColor: "red",
+  }
 });
+

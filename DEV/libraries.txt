@@ -1,0 +1,3 @@
+npm i react-native-media-query --dev
+
+npm i react-native-responsive-screen --dev
