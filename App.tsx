@@ -4,12 +4,20 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 import HeaderBar from "./src/Service/components/HeaderBar";
 import FooterBar from "./src/Service/components/FooterBar";
 
+//Test stuff}
+import ChangeText from "./DEV/useStateTest";
+import HidenShow from "./DEV/useStateHideandShow";
+import AutoFocus from "./DEV/useStateAutoFocusonAnother";
+import SearchBarTest from "./DEV/SearchBarFocusTest";
+
+
 const {height, width} = Dimensions.get('window');
 
 export default function App() {
   return (
     <SafeAreaView style={style.root}>
-      <Feed />   
+      <SearchBarTest />
+      {/*<Feed />*/}
     </SafeAreaView>
   );
 }
